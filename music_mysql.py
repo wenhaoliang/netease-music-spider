@@ -1,3 +1,4 @@
+# coding = utf-8
 import pymysql
 config = {
     'host': '127.0.0.1',
@@ -8,7 +9,9 @@ config = {
     'charset': 'utf8mb4',
     'cursorclass': pymysql.cursors.DictCursor,
 }
-#将用户（id,name,comment）添加到user_comment数据中
+
+
+# 将用户（id,name,comment）添加到user_comment数据中
 def insert_commnet(id, name, comment):
     # Connect to the database
     db = pymysql.connect(**config)
@@ -28,7 +31,8 @@ def insert_commnet(id, name, comment):
     # 关闭数据库连接
     db.close()
 
-#从user_comment数据库中获取用户的个人（id，name）,并返回user_data列表
+
+# 从user_comment数据库中获取用户的个人（id，name）,并返回user_data列表
 def get_user_id_mysql():
     user_data = []
     # Connect to the database
@@ -58,7 +62,8 @@ def get_user_id_mysql():
     # 关闭数据库连接
     db.close()
 
-#将其的（id，name，听歌排行中的前100首）歌添加到user_love_songs数据库中
+
+# 将其的（id，name，听歌排行中的前100首）歌添加到user_love_songs数据库中
 def insert_user(id, name, data):
     # Connect to the database
     db = pymysql.connect(**config)
@@ -89,7 +94,5 @@ def insert_user(id, name, data):
         print('出现错误啦~错误是:', e)
         # 如果发生错误则回滚
         db.rollback()
-
-
     # 关闭数据库连接
     db.close()

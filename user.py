@@ -16,6 +16,8 @@ user_data = {
     'encSecKey': '46fddcef9ca665289ff5a8888aa2d3b0490e94ccffe48332eca2d2a775ee932624afea7e95f321d8565fd9101a8fbc5a9cadbe07daa61a27d18e4eb214ff83ad301255722b154f3c1dd1364570c60e3f003e15515de7c6ede0ca6ca255e8e39788c2f72877f64bc68d29fac51d33103c181cad6b0a297fe13cd55aa67333e3e5'
 }
 # 添加用户id、名字、以及喜欢的歌曲到user_love_songs数据库中
+
+
 def get_user_music(uid,user_name):
     data = []
     url = 'http://music.163.com/weapi/v1/play/record?csrf_token='

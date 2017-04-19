@@ -1,9 +1,11 @@
+#coding: utf-8
 import music_mysql
 import comment
 import user
 
 # 添加想要抓取的歌曲的ID
-songs_name_data = [182724]
+songs_name_data = [446945324, 417596830, 446945324, 34723470, 5239883, 461011, 432506345, 410042104, 350760, 33378384, 459793871, 229072, 31517361]
+
 
 def spider_start():
     # 遍历想要爬取的歌曲，并将其（id,name,comment）添加到user_comment数据中
