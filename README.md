@@ -2,7 +2,7 @@
 
 
 ## Introduction
-`netease-music-spider` is a sipder that you can find beautiful girlfiend or handsome boyfriend.
+`netease-music-spider` is a sipder that you can find beautiful girlfriend or handsome boyfriend.
 
 
 ## Source Code Structure
