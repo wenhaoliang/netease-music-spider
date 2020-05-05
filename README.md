@@ -25,4 +25,4 @@
 
 ## License
 
-LzayWorm
+LazyWorm
